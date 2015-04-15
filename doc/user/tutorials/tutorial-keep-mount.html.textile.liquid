@@ -19,7 +19,7 @@ h2. Arv-mount
 The default mode permits browsing any collection in Arvados as a subdirectory under the mount directory.  To avoid having to fetch a potentially large list of all collections, collection directories only come into existence when explicitly accessed by their Keep locator. For instance, a collection may be found by its content hash in the @keep/by_id@ directory.
 
 <notextile>
-<pre><code>~$ <span class="userinput">mkdir -p keep</span>
+<pre><code>~$ <span class="userinput">mkdir keep</span>
 ~$ <span class="userinput">arv-mount keep</span>
 ~$ <span class="userinput">cd keep/by_id/c1bad4b39ca5a924e481008009d94e32+210</span>
 ~/keep/by_id/c1bad4b39ca5a924e481008009d94e32+210$ <span class="userinput">ls</span>
